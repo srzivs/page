@@ -1,0 +1,16 @@
+/* TODO: 08_quiz.css */
+/* TODO: 전체박스(도화지): #page, 박스 중앙정렬 */
+#page {width: 99vw; margin: 0 auto;}
+/* TODO: 꼬리말(footer), 높이(6rem), 배경색(beige),글자(이탤릭) */
+footer {height: 6rem;background-color: beige;font-style: italic;}
+/* TODO: 전번(#customer): 태블릿 - 왼쪽(float), 높이: 50%, 세로중앙(flex) */
+#customer {height: 50%;display: flex;align-items: center;margin-left: 2rem;}
+/* TODO: 주소(#address): 태블릿 - 오른쪽(float), 높이: 50%, 세로중앙(flex) */
+#address {height: 50%;display: flex;align-items: center;margin-left: 2rem;}
+
+/* TODO: 반응형, 태블릿 */
+@media screen and (min-width: 768px){
+    /* TODO: 전번(왼쪽, float), 주소(오른쪽), , 높이(50% -> 100%) */
+    #customer {float: left; height: 100%;}
+    #address {float: right; height: 100%;}
+}

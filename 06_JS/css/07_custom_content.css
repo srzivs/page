@@ -1,0 +1,75 @@
+/* TODO: 핸드폰 디자인 */
+/* 도화지(크기 지정, 중앙정렬) */
+#page {width: 99vw; margin: 0 auto;}
+/* TODO: 배너 이미지(백그라운드 이미지) */
+.main-banner {
+    width: 100%;
+    height: 30vh;
+    background-image: url("https://picsum.photos/600/400");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main-banner2{
+    width: 100%;
+    height: 30vh;
+    background-image: url("https://placehold.co/600x400");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* TODO: 본문 디자인: 가로100%, 중앙정렬(상/하 마진) */
+.container {width: 100%; margin: 2rem auto;}
+/* TODO: 추천상품 디자인(3개): content-area - content-box(가로 100%) - img,  */
+.content-box {
+    width: 100%;
+    /* 패딩 */
+    padding: 5px;
+    /* TODO: 미리 float 적용 */
+    float: left;
+}
+.content-box img {
+    max-width: 100%;
+    height: auto;
+}
+/* TODO: float 인식 */
+.clear {clear: both;}
+
+/* TODO: 물품 상세 이미지 4개씩 디자인: product-area */
+/* TODO: 상품 제목 */
+.product-area h2 {font-size: 1.5rem; padding: 1.5rem;}
+/* TODO: 상품 목록(ul태그:product-list) */
+.product-list li {float: left;width: 50%;border: 1px solid lightgray;}
+/* TODO: 목록 : 세로크기(2.75rem), 가로/세로 중앙정렬(flex) */
+.product-list li a {height: 2.75rem;
+    display: flex;justify-content: center;align-items: center;
+}
+/* TODO: 상품 이미지 4개 작업: product-box(할아버지) - product(아빠) - img(자식) */
+.product {
+    width: 100%;
+    /* TODO: 미리 float 적용 */
+    float: left;
+}
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* TODO: 태블릿 (ipad mini) */
+@media screen and (min-width: 768px){
+    /* TODO: 가로 여유있으니 조금 줄임 */
+    .container {width: 90%;}  
+    /* TODO: 추천상품 3개씩 보이기(33%) */
+    .content-box {width: 33%;}   
+    /* TODO: 상품목록(외곽선 해제, 가로(50% -> auto)), 여백(패딩)  */
+    .product-list li {border: none; width: auto;
+        padding: 1rem 0.6rem 1rem 0.6rem;
+    }
+    /* TODO: 상품 상세 이미지(product-img) (4개씩: 100/4 = 가로 25%) */
+    .product {width: 25%;}
+}
+
+/* TODO: pc */
+@media screen and (min-width: 1024px){
+    .container {width: 60%;}
+}

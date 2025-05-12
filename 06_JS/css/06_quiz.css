@@ -1,0 +1,36 @@
+/* TODO: 핸드폰 디자인 */
+/* TODO: 도화지(크기지정, 중앙정렬) */
+#page {width: 99vw; margin: 0 auto;}
+/* TODO: 대메뉴(GNB), 중앙정렬 */
+nav {width: 100%; margin: 0 auto;}
+/* TODO: 대표글자, 중앙정렬 */
+.brand {text-align: center; padding: 1.5rem;}
+/* TODO: 햄버거 메뉴 */
+.fab img {width: 2rem;}
+/* TODO: 햄버거 이동: 절대좌표(15,25) */
+.fab {position: absolute; left: 15px; top: 25px;}
+/* TODO: 메뉴 6개 : 3개씩(100%/3 = 33%) */
+.menu li {float: left; width: 33%; border: 1px solid lightgray;}
+/* TODO: 메뉴 글자 높이 추가 , 가로/세로 중앙정렬 */
+.menu li a {height: 5rem; 
+      display: flex; justify-content: center; align-items: center;}
+/* TODO: 여백(margin): 상 우 하 좌; (시계방향) */
+.menu {margin: 0 15px 0 15px;}
+/* TODO: 마우스 위: 배경색(파랑), 글자(하얀색) */
+.menu li a:hover {background-color: #1E90FF; color: white;}
+
+/* TODO: 태블릿 (ipad mini) */
+@media screen and (min-width: 768px){
+    nav {width: 90%;}
+    /* TODO: 햄버거 메뉴 숨김 */
+    .fab {display: none;}
+    /* TODO: 대표글자(왼쪽) */
+    .brand {float: left;}
+    /* TODO: 메뉴(오른쪽) */
+    .menu {float: right;}
+}
+
+/* TODO: pc */
+@media screen and (min-width: 1024px){
+    nav {width: 60%;}
+}

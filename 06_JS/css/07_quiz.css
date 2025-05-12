@@ -1,0 +1,51 @@
+/* TODO: 도화지(크기지정, 중앙정렬) */
+#page {width: 99vw; margin: 0 auto;}
+/* TODO: 배너 이미지 */
+/* TODO: class별명 {속성:값;} */
+.main-banner {
+    width: 100%;
+    height: 30vh;
+    background-image: url("https://picsum.photos/600/400");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* TODO: 본문: 대표 상품이미지(2개) */
+.container {width: 100%; margin: 0 auto;}
+/* TODO: 이미지 디자인/태그 : 1) 부모: 디자인 2) 부모 img {가로:100%; 세로:auto} */
+/* TODO: 이미지들 : 세로 -> 가로 배치 : float: left; */
+.content-box {width: 100%;float: left;padding: 5px;}
+.content-box img {max-width: 100%;height: auto;}
+/* TODO: float 인식 */
+.clear {clear: both;}
+
+/* TODO: 상품 상세 제목/목록/ 이미지(6개) */
+/* TODO: 상품 상세 제목 */
+.product-area h2 {font-size: 1.5rem; padding: 1.5rem;}
+/* TODO: 상품 상세 목록: ul: product-list - li (세로->가로, 가로(50%), 외곽선) */
+.product-list li {float: left;width: 50%; border: 1px solid lightgreen;}
+/* TODO: 상품 상세 목록2: 세로(2.75rem), 가로/세로 중앙정렬(flex) */
+.product-list li a {height: 2.75rem;
+    display: flex;justify-content: center;align-items: center;
+}
+/* TODO: 상품 상세 이미지 6개(가로:100%, 세로-가로배치) -> 태블릿(가로:33%) */
+/* TODO: 이미지박스 - 이미지박스 img  */
+.product {width: 100%;float: left;}
+.product img {max-width: 100%;height: auto;}
+
+/* TODO: 태블릿 */
+@media screen and (min-width: 768px){
+    /* TODO: 본문 전체 박스 */
+    .container {width: 90%;}
+    /* TODO: 대표(추천) 이미지 2개(가로 100% -> 50%) */
+    .content-box {width: 50%;}
+    /* TODO: 목록 외곽선 해제ㅡ, 가로:auto */
+    .product-list li {border: none; width: auto;}  
+    /* TODO: 상품 이미지 (3개씩 배치 : 가로 33%) */
+    .product {width: 33%;}
+}
+/* TODO: pc */
+@media screen and (min-width: 1024px){
+    /* TODO: 본문 전체 박스 */
+    .container {width: 60%;}    
+}

@@ -1,0 +1,22 @@
+/* 08_custom_footer.css */
+/* TODO: 1) 배경색 : 엷은 회색 */
+/* TODO: 2) 주소   : 왼쪽(float) */
+/* TODO: 3) 전번   : 오른쪽(float) */
+/* TODO: 4) 박스 중앙 : margin: 0 auto; */
+/* TODO: 핸드폰 디자인 */
+/* TODO: 전체 박스 디자인(#page): 크기지정(도화지) */
+#page {width: 99vw; margin: 0 auto;}
+/* TODO: 꼬리말(footer): 배경색 : 엷은 회색, 높이(6rem), 글자(이탤릭) */
+footer {height: 6rem; background-color: lightgray; font-style: italic;}
+
+/* TODO: 주소(#address): 왼쪽배치(float)(태블릿,pc), 글자 세로 중앙정렬(flex) */
+#address {height: 50%;margin-left: 2rem; display: flex; align-items: center;}
+/* TODO: 전번(#customer): 오른쪽배치(float)(태블릿,pc), 글자 세로 중앙정렬 */
+#customer {height: 50%;margin-left: 2rem; display: flex; align-items: center;}
+
+/* TODO: 태블릿 */
+@media screen and (min-width: 768px){
+    /* TODO: 주소(왼쪽), 전번(오른쪽, float), 높이(50% -> 100%) */
+    #address {float: left; height: 100%;}
+    #customer {float: right; height: 100%;}
+}
