@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {font-family: "Roboto Condensed", sans-serif;  font-family: "Nanum Gothic Coding", monospace;}
+a {text-decoration: none; color: black;}
+#event {width: 99vw; margin: 0 auto;}
+
+.clear {clear: both;}
+
+#event-head {padding: 1.5rem;}
+#event-head h3 {float: left;}
+.watching {float: right;}
+.ev-banner {float: left; padding: 1rem;}  
+.ev-banner img { max-width: 100%; height: auto;}
+
+/*   
+  border-radius: 6px;
+  */
