@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&display=swap');
+
+@font-face {
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ancizar Sans", sans-serif;
+}
+a {text-decoration: none; color: black;}
+#event {width: 100%; margin: 0 auto;}
+.clear {clear: both;}
+
+#event-head {
+  padding: 1.5rem;
+}
+#event-head h3 {
+  float: left; color: white;
+}
+
+.watching {
+  float: right; color: lightgrey;
+}
+.ev-banner {
+  float: none; 
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  text-align: center;
+}
+.ev-banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.ev-title {
+color: white;
+}
+.since{
+color: white;
+}
+.swiper {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #7fd641;
+}
+.swiper-pagination-bullet {
+  background-color: lightgray !important;
+  opacity: 1 !important;  
+}
+.swiper-pagination-bullet-active {
+  background-color: #7fd641 !important; 
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  #event {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #event {
+    width: 80%;
+  }
+}

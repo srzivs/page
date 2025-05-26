@@ -1,0 +1,33 @@
+#page {width: 99vw; height: 99vh;margin: 0 auto;}
+.main-banner {
+    width: auto;
+    height: 70vh;
+    background-image: url("../img/img3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#customer-service {
+  width: 75vw;
+  margin: 2rem auto;
+  text-align: center;
+}
+.service-item {
+  width: 10%;
+  padding: 5px;
+  display: inline-block; 
+}
+.service-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.service-link {
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.service-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
