@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1c1c;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  padding: 20px;
+}
+
+#section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.tit-util {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.tit-util .tit {
+  font-size: 24px;
+  color: #7fd641;
+}
+
+.tit-util .right a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.curation-area {
+  display: flex;
+  gap: 40px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.left-poster {
+  flex: 0 0 320px;
+}
+
+.left-poster img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+.info.film {
+  margin-bottom: 20px;
+}
+
+.info.film .tit {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.info.film .summary {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.btn-group {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #ddd;
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #bbb;
+}
+
+.button.gblue {
+  background-color: #3366ff;
+  color: #fff;
+}
+
+.button.gblue:hover {
+  background-color: #254eda;
+}
+
+.list ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.list ul li .img img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.list ul li .img img:hover {
+  transform: scale(1.05);
+}
+
+.list ul li .tit {
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .curation-area {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .btn-group {
+    justify-content: center;
+  }
+
+  .list ul {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
