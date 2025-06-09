@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>PAGE</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div id="section" class="main-curation">
+      <div class="tit-util">
+        <h2 class="tit">큐레이션</h2>
+        <div class="right">
+          <a href="#" title="큐레이션 더보기">큐레이션 더보기</a>
+        </div>
+      </div>
+
+      <div class="curation-area">
+        <!-- 왼쪽 큰 포스터 -->
+        <div class="left-poster">
+          <img src="./img/uu.jpg" alt="가위손" />
+        </div>
+
+        <!-- 오른쪽 설명 + 버튼 + 작은 포스터 -->
+        <div class="right-content">
+          <div class="info film">
+            <p class="tit">가위손</p>
+            <p class="summary">
+              한 발명가가 만든 인조인간인 에드워드는, 발명가의 갑작스런 죽음으로
+              가위가 달린 손을 가진 채 미완성으로 남아 있다. 화장품 외판원 펙은
+              마을 언덕 외딴 성에서 상처투성이 창백한 얼굴과 날카로운 가위손
+              때문에 외롭게 살고 있는 에드워드를 만나 자신의 집으로 데려온다.
+              평범한 일상에 무료해하던 마을 사람들에게 큰 관심거리가 된
+              에드워드는 펙의 딸 킴을 만나 첫눈에 사랑에 빠지지만, 그녀의
+              남자친구의 질투와 이웃들의 편견으로 도둑으로 몰리며 더 큰 오해에
+              빠지게 되는데...
+            </p>
+          </div>
+
+          <div class="btn-group">
+            <a href="#" class="button" title="상세정보">상세정보</a>
+            <a href="#" class="button gblue" title="예매">예매</a>
+          </div>
+
+          <div class="list">
+            <ul>
+              <li>
+                <a href="#" title="영화상세 보기">
+                  <div class="img">
+                    <img src="./img/78.jpg" alt="코코" />
+                  </div>
+                  <p class="tit">코코</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="영화상세 보기">
+                  <div class="img">
+                    <img
+                      src="./img/water.jpg"
+                      alt="셰이프 오브 워터: 사랑의 모양"
+                    />
+                  </div>
+                  <p class="tit">셰이프 오브 워터: 사랑의 모양</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="영화상세 보기">
+                  <div class="img">
+                    <img src="./img/moana.jpg" alt="모아나" />
+                  </div>
+                  <p class="tit">모아나</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="영화상세 보기">
+                  <div class="img">
+                    <img
+                      src="https://img.megabox.co.kr/SharedImg/2025/05/02/bPIYWS7jBPFLo3K01EbpLFvy9OLWnzBw_230.jpg"
+                      alt="애브"
+                    />
+                  </div>
+                  <p class="tit">아이다 @The Met</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="event">
+      <div id="event-head">
+        <h3>EVENT</h3>
+        <a href="#"><p class="watching">전체보기 &gt;</p></a>
+      </div>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide ev-banner">
+            <a href="#"><img src="./img/4.png" alt="event1" width="300" /></a>
+            <div class="ev-title">
+              미션 임파서블: 파이널 레코닝<br />포스터 증정
+            </div>
+            <p class="since">2025-05-17 ~ 2025-05-20</p>
+          </div>
+
+          <div class="swiper-slide ev-banner">
+            <a href="#"><img src="./img/1.png" alt="event2" width="300" /></a>
+            <div class="ev-title">
+              파이널 데스티네이션<br />스페셜 티켓 증정
+            </div>
+            <p class="since">2025-05-14 ~ 2025-05-21</p>
+          </div>
+
+          <div class="swiper-slide ev-banner">
+            <a href="#"><img src="./img/2.png" alt="event3" width="300" /></a>
+            <div class="ev-title">5월 가정의 달 이벤트</div>
+            <p class="since">2025-05-01 ~ 2025-05-31</p>
+          </div>
+
+          <div class="swiper-slide ev-banner">
+            <a href="#"><img src="./img/3.png" alt="event3" width="300" /></a>
+            <div class="ev-title">승부 N차 관람 이벤트</div>
+            <p class="since">2025-04-30 ~ 2025-05-06</p>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          1024: { slidesPerView: 3 },
+          768: { slidesPerView: 2 },
+          0: { slidesPerView: 1 },
+        },
+      });
+
+      $(function () {
+        $("#fab").click(function () {
+          $("html").scrollTop(0);
+        });
+      });
+    </script>
+  </body>
+</html>
