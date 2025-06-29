@@ -14,7 +14,6 @@ body {
 li {list-style-type: none;}
 a {text-decoration: none;}
 
-
 /* 공통 여백 정하기 */
 /* 마진 위 5개 */
 .mt0 {margin-top:0.25rem !important;}
@@ -84,9 +83,13 @@ a {text-decoration: none;}
 /* 머리말 */
 
 .custom-header {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
   padding: 1.5rem 1rem;
   text-align: center;
-  position: relative;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #fff;
 }
 
 .brand {
@@ -274,5 +277,3 @@ a {text-decoration: none;}
 	
 }
 }
-
-
