@@ -37,7 +37,8 @@
             <li><a class="dropdown-item" href="<c:url value='/dept/dept.do'/>">드라마</a></li>
             <li><a class="dropdown-item" href="<c:url value='/dept/dept.do'/>">게임</a></li>
           </ul>
-      
+      </li>
+
       <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button">
             crumb
