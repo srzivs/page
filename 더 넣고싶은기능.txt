@@ -1,0 +1,153 @@
+2. 검색 기능 추가
+(1) 헤더에 검색창 추가 (header.jsp에 넣기)
+html
+복사
+편집
+<div class="search-bar">
+  <form action="/search" method="get">
+    <input type="text" name="query" placeholder="검색어를 입력하세요" aria-label="검색어 입력" />
+    <button type="submit">검색</button>
+  </form>
+</div>
+(2) CSS (exstyle.css에 추가)
+css
+복사
+편집
+.search-bar {
+  margin-left: 1rem;
+}
+
+.search-bar input[type="text"] {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  width: 200px;
+  transition: width 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+  width: 250px;
+  border-color: #A47764;
+}
+
+.search-bar button {
+  padding: 6px 14px;
+  border: 1px solid #A47764;
+  background-color: #A47764;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #6d4929;
+}
+(3) 반응형 고려 (모바일에서는 검색 아이콘으로 변경 가능)
+추가로 필요하면 말씀해 주세요.
+
+3. 반응형 메뉴 개선
+(1) 햄버거 메뉴에 애니메이션 효과 (menu-toggle에 애니메이션 클래스 추가)
+HTML - menu-toggle 버튼 구조 그대로 두고 CSS로 애니메이션 구현
+
+(2) CSS 예시
+css
+복사
+편집
+.menu-toggle {
+  cursor: pointer;
+  width: 30px;
+  height: 22px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 4px;
+  background-color: #A47764;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* 메뉴 열렸을 때 애니메이션 */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+(3) JS 변경 (menu-toggle 클릭 시 active 토글)
+js
+복사
+편집
+$(document).ready(function() {
+  $('.menu-toggle').click(function() {
+    $(this).toggleClass('active');
+    $('.main-nav').slideToggle();
+  });
+});
+(4) 메뉴 활성화 표시
+헤더 메뉴 링크에 active 클래스를 주고 CSS로 스타일 조정
+
+css
+복사
+편집
+.main-nav .menu li a.active {
+  color: #6d4929;
+  font-weight: 700;
+  border-bottom: 2px solid #6d4929;
+}
+필요시 JSP에서 현재 URL과 비교해 active 클래스 추가
+
+7. 푸터에 뉴스레터 구독 폼 추가
+(1) footer.jsp에 폼 추가
+jsp
+복사
+편집
+<div class="newsletter">
+  <h4>뉴스레터 구독</h4>
+  <form action="/newsletter/subscribe" method="post">
+    <input type="email" name="email" placeholder="이메일을 입력하세요" required />
+    <button type="submit">구독하기</button>
+  </form>
+</div>
+(2) CSS 추가
+css
+복사
+편집
+.newsletter {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.newsletter input[type="email"] {
+  padding: 8px 12px;
+  border-radius: 20px 0 0 20px;
+  border: 1px solid #ccc;
+  width: 220px;
+  outline: none;
+}
+
+.newsletter button {
+  padding: 8px 16px;
+  border-radius: 0 20px 20px 0;
+  border: none;
+  background-color: #A47764;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #6d4929;
+}
+(3) 서버에서 폼 처리 구현 필요 (서블릿, 컨트롤러 등)
